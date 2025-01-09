@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Vachhani - Python Developer</title>
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .typing-effect::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .terminal-window {
+            background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+
+        /* Custom theme colors */
+        .text-accent {
+            color: #10b981 !important;
+        }
+
+        .text-accent-light {
+            color: #34d399 !important;
+        }
+
+        .bg-accent {
+            background-color: #10b981 !important;
+        }
+
+        .hover\:text-accent-light:hover {
+            color: #34d399 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-black text-gray-300 min-h-screen">
+    <nav class="border-b border-gray-800 bg-black/50 backdrop-blur-sm fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center space-x-3">
+                <div class="flex space-x-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <span class="text-accent font-mono text-xl">~/abhay_vachhani.py</span>
+            </div>
+            <div class="space-x-6 font-mono">
+                <a href="#about" class="hover:text-accent-light transition-colors">.about()</a>
+                <a href="#education" class="hover:text-accent-light transition-colors">.education()</a>
+                <a href="#skills" class="hover:text-accent-light transition-colors">.skills()</a>
+                <a href="#projects" class="hover:text-accent-light transition-colors">.projects()</a>
+                <a href="#achievements" class="hover:text-accent-light transition-colors">.achievements()</a>
+                <a href="#contact" class="hover:text-accent-light transition-colors">.contact()</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 pt-24">
+        <section class="py-20 text-center">
+            <div class="typing-effect font-mono text-4xl text-accent mb-4" id="typing-text"></div>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                <span class="text-green-400"># </span>
+                Backend Developer | R&D Engineer | DevOps Specialist
+            </p>
+        </section>
+
+        <section id="about" class="mb-20 pt-16">
+            <div class="terminal-window rounded-lg p-6">
+                <pre class="language-python"><code>class Developer:
+    def __init__(self):
+        self.name = "Abhay M. Vachhani"
+        self.role = "Backend & R&D Developer"
+        self.current_position = {
+            "company": "Imbuesoft LLP",
+            "responsibilities": [
+                "Backend Development",
+                "Research & Development",
+                "DevOps & Server Management"
+            ]
+        }
+        self.location = "India"
+        
+    def get_bio(self):
+        return """
+        Enthusiastic and committed software developer with expertise in Python 
+        and JavaScript programming. Strong foundation in full-stack development,
+        with a focus on creating scalable solutions and innovative applications.
+        """
+        </code></pre>
+            </div>
+        </section>
+
+        <section id="education" class="mb-20">
+            <h2 class="text-2xl font-mono text-accent mb-8">def show_education():</h2>
+            <div class="terminal-window rounded-lg p-6">
+                <pre class="language-python"><code>education = {
+    "MCA": {
+        "institution": "Atmiya University",
+        "location": "Rajkot, Gujarat",
+        "period": "2022-2024",
+        "cgpa": 9.30
+    },
+    "BCA": {
+        "institution": "Atmiya University",
+        "location": "Rajkot, Gujarat",
+        "period": "2019-2022",
+        "cgpa": 8.27
+    }
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-20">
+            <h2 class="text-2xl font-mono text-accent mb-8">def show_skills():</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-mono">Python/Django</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-full">
+                            <div class="skill-bar bg-accent h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-mono">JavaScript/React</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-full">
+                            <div class="skill-bar bg-accent h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-mono">AI Integration and Solutions</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-full">
+                            <div class="skill-bar bg-accent h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-mono">DevOps/Server Management</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-full">
+                            <div class="skill-bar bg-accent h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-mono">Git/Linux</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-full">
+                            <div class="skill-bar bg-accent h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-mono">Database</span>
+
+                        </div>
+                        <div class="bg-gray-800 rounded-full">
+                            <div class="skill-bar bg-accent h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="projects" class="mb-20">
+            <h2 class="text-2xl font-mono text-accent mb-8">def show_projects():</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="terminal-window rounded-lg p-6 hover:scale-105 transition-transform">
+                    <pre class="language-python"><code>project = {
+    "name": "Jewelsamrat",
+    "type": "B2B Jewellery Platform",
+    "description": """
+    Developed a comprehensive B2B jewelry platform
+    with seamless functionality and performance.
+    Enhanced user experience and platform scalability.
+    """,
+    "tech_stack": []
+}</code></pre>
+                </div>
+                <div class="terminal-window rounded-lg p-6 hover:scale-105 transition-transform">
+                    <pre class="language-python"><code>project = {
+    "name": "txtnode.in",
+    "type": "Real-time Collaborative Platform",
+    "description": """
+    Start a new note instantly with txtnode, 
+    the real-time collaborative text editor.
+    Features specialized support for code content
+    in HTML and Python, with more languages planned.
+    """,
+    "tech_stack": ["Real-time sync", "Code highlighting", 
+                  "Collaborative editing"],
+    "supported_languages": ["HTML", "Python"]
+}</code></pre>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="terminal-window rounded-lg p-6 hover:scale-105 transition-transform">
+                    <pre class="language-python"><code>project = {
+    "name": "Attendance Update Notifier",
+    "type": "Discord Integration",
+    "features": [
+        "Real-time notifications",
+        "CMS integration",
+        "Attendance tracking",
+        "Subject-wise updates"
+    ],
+    "tech_stack": ["Python", "Discord API"]
+}</code></pre>
+                </div>
+                <div class="terminal-window rounded-lg p-6 hover:scale-105 transition-transform">
+                    <pre class="language-python"><code>project = {
+    "name": "Gyan GPT",
+    "type": "Telegram Chatbot",
+    "features": [
+        "Natural language processing",
+        "Interactive responses",
+        "Personalized assistance"
+    ],
+    "tech_stack": ["Python", "Telegram API", "GPT Integration"]
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="mb-20">
+            <h2 class="text-2xl font-mono text-accent mb-8">def show_achievements():</h2>
+            <div class="terminal-window rounded-lg p-6">
+                <pre class="language-python"><code>achievements = [
+    {
+        "title": "Python Charmer",
+        "event": "Cybershadez @ GLS University",
+        "position": "First Prize",
+        "details": "Won first prize in Python programming competition"
+    },
+    {
+        "title": "Code Carnival - GDSC",
+        "project": "CloudOS",
+        "ranking": "Top 15",
+        "details": "Worked on developing an affordable web-based OS for SoC platforms."
+    },
+    {
+        "title": "Atmiya University Hackathon",
+        "project": "Automatic Certificate Generator",
+        "position": "First Rank",
+        "tech_stack": ["React", "Node.js", "MongoDB"]
+    }
+]</code></pre>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <h2 class="text-2xl font-mono text-accent mb-8">def contact_me():</h2>
+            <div class="terminal-window rounded-lg p-6">
+                <pre class="language-python"><code>contact_info = {
+    "linkedin": "linkedin.com/in/abhay-vachhani",
+    "github": "github.com/Abhay-Vachhani",
+    "fiverr": "fiverr.com/abhay_vachhani",
+    "status": "Open to opportunities"
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center font-mono">
+            <pre class="language-python"><code>if __name__ == "__main__":
+    print("Abhay M. Vachhani • Python Developer")</code></pre>
+        </div>
+    </footer>
+
+    <script>
+        const text = "print('Hello World! I'm Abhay Vachhani')";
+        let index = 0;
+        const typingElement = document.getElementById('typing-text');
+
+        function typeText() {
+            if (index < text.length) {
+                typingElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            }
+        }
+
+        window.onload = () => {
+            typeText();
+            Prism.highlightAll();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
